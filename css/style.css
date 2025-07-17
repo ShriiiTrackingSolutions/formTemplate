@@ -1,0 +1,105 @@
+/* Font Families */
+
+:root {
+  --primary-color: #FDB900;     
+  --secondary-color: #193c9b;   
+  --accentColour: #d6a110;      
+  --black: #2B2B2B;
+  --lightBlue:#678ffc;
+  --lightBg: #f6f3ee; 
+  --bgGrey: #F2F2F2;
+  --Grey: #747474;          
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  color: #2B2B2B; /* Charcoal text */
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+
+.display-2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-size: clamp(2.25rem, 2rem + 2vw, 4rem);   /* ~36px–64px */
+  margin-bottom: 24px;
+}
+.display-2 span{
+  color: var(--primary-color);
+}
+
+.secH {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  font-size: clamp(24px, 1.25rem + 1.8vw, 46px); 
+  margin-bottom: 30px;
+}
+.thirdH {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  font-size: clamp(22px, 1rem + 1.5vw, 34px); 
+  margin: 0 0 20px;
+}
+
+.fourthH {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  font-size: clamp(20px, 0.8rem + 1.2vw, 24px); 
+}
+.fifthH {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  font-size: clamp(18px, 0.8rem + 1vw, 20px); 
+}
+.dropdown-item,
+.fifthH,
+.fourthH {
+  text-transform: capitalize;
+}
+
+
+
+#contactForm textarea{
+  resize: none;
+}
+
+#contactForm .btnFill{
+border-radius: 0;
+display: table;
+margin-left: auto;
+margin-right: auto;
+}
+
+#contactForm button{
+  border: none;
+}
+
+
+.form-control::placeholder{
+  color: #c7c7c7;
+}
+
+
+.btnFill {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 16px;
+    background-color: var(--primary-color);
+    color: var(--black);
+    font-weight: 600;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, scale 0.1s ease-in-out;
+}
+
+.btnFill:hover {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+
